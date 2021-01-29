@@ -1,0 +1,29 @@
+<div class="container">
+    
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th colspan="2" scope="col">Ship From</th>
+            
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of shipFromData">
+          <td colspan="2">{{ data.warehouseName }}</td>
+        </tr>
+        <tr *ngFor="let data of shipFromData">
+            <th scope="row">phone:</th>
+            <td>{{ data.phoneNumber }}</td>
+        </tr>
+        <tr *ngFor="let data of shipFromData">
+            <th scope="row">address:</th>
+            <td>{{ data.address}}</td>
+        </tr>
+        <tr *ngFor="let data of shipFromData">
+            <th scope="row">website:</th>
+            <td>{{ data.website }}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>

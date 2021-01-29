@@ -1,0 +1,30 @@
+<div class="container">
+    
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th colspan="2" scope="col">Ship To</th>
+            
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of shipTo">
+          <th scope="row">Name:</th>
+            <td>{{ data.consignee }}</td>
+        </tr>
+        <tr *ngFor="let data of shipTo">
+            <th colspan="1" scope="row">Phone:</th>
+            <td>{{ data.phone }}</td>
+        </tr>
+        <tr *ngFor="let data of shipTo">
+            <th scope="row">Address:</th>
+            <td>{{ data.address}}</td>
+        </tr>
+        <tr *ngFor="let data of shipTo">
+            <th scope="row">Email:</th>
+            <td>{{ data.email }}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>

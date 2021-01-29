@@ -1,0 +1,30 @@
+<div class="container">
+    
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th colspan="2" scope="col">Order Details</th>
+            
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of orderData">
+          <th scope="row">customer id:</th>
+            <td>{{ data.customerId }}</td>
+        </tr>
+        <tr *ngFor="let data of orderData">
+            <th scope="row">Date:</th>
+            <td>{{ data.currentDate }}</td>
+        </tr>
+        <tr *ngFor="let data of orderData">
+            <th scope="row">Invoice number:</th>
+            <td>{{ data.invoiceNumber}}</td>
+        </tr>
+        <tr *ngFor="let data of orderData">
+            <th scope="row">Invoice Date:</th>
+            <td>{{ data.invoiceDate }}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>

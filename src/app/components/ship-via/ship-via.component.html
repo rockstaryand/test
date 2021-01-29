@@ -1,0 +1,30 @@
+<div class="container">
+  
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th colspan="2" scope="col">Ship Via</th>
+            
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of shipVia">
+          <th scope="row">Carrier:</th>
+            <td>{{ data.carrier }}</td>
+        </tr>
+        <tr *ngFor="let data of shipVia">
+            <th scope="row">Special Instructions:</th>
+            <td>{{ data.specialInstuctions }}</td>
+        </tr>
+        <tr *ngFor="let data of shipVia">
+            <th scope="row">Total Pallets:</th>
+            <td>{{ data.totalPallets }}</td>
+        </tr>
+        <tr *ngFor="let data of shipVia">
+            <th scope="row">Total Weight: </th>
+            <td>{{ data.totalWeight }}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
